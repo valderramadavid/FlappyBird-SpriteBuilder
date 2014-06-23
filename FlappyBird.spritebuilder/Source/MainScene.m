@@ -176,7 +176,8 @@
         
         //if the left corner is all the way off the screen then move it to the right
         if(cloud.position.x <= (-1*cloud.contentSize.width)){
-            cloud.position = ccp(cloud.position.x + 2*cloud.contentSize.width, cloud.position.y);
+            //cloud.position = ccp(cloud.position.x + 2*cloud.contentSize.width, cloud.position.y);
+            cloud.position = ccp(cloud.contentSize.width, cloud.position.y);
         }
     }
     
