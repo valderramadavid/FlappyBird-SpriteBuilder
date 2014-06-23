@@ -164,7 +164,8 @@
         
         //if the left corner is all the way off the screen then move it to the right
         if(bush.position.x <= (-1*bush.contentSize.width)){
-            bush.position = ccp(bush.position.x + 2*bush.contentSize.width, bush.position.y);
+            //bush.position = ccp(bush.position.x + 2*bush.contentSize.width, bush.position.y);
+            bush.position = ccp(bush.contentSize.width, bush.position.y);
         }
     }
     
